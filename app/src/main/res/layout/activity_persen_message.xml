@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PersenMessageActivity">
+    <RelativeLayout
+        android:id="@+id/person_message_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.liangqg.qq.layout.MessageLayout_Title
+        android:id="@+id/messageLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/messageList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape3"
+            android:layout_toLeftOf="@+id/send_message"/>
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/send_message"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="发送"
+            android:background="@drawable/shape4"
+            android:textSize="17dp"/>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+<RelativeLayout
+    android:id="@+id/main_RL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.example.liangqg.qq.layout.TitleLayout
+    android:id="@+id/main_titlelayput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+</com.example.liangqg.qq.layout.TitleLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginTop="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+    </ListView>
+<ListView
+    android:visibility="invisible"
+    android:id="@+id/friends_list"
+    android:layout_marginTop="51dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp">
+</ListView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/main_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息"
+        android:textColor="#09A1F5"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/main_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系人"
+        android:layout_weight="1"
+        android:layout_marginLeft="-8dp"
+        android:textColor="#000000"/>
+    <Button
+        android:id="@+id/main_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态"
+        android:layout_weight="1"
+        android:layout_marginLeft="-8dp"
+        android:textColor="#000000"/>
+</LinearLayout>
+
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_add"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.example.liangqg.qq.layout.AddTitleLayout
+            android:id="@+id/main_add_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_find_replace_black_24dp"/>
+            <EditText
+                android:id="@+id/person_message_add_edit"
+                android:layout_toLeftOf="@+id/person_message_add_cencel"
+                android:layout_marginLeft="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape8"/>
+            <Button
+                android:id="@+id/person_message_add_cencel"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="取消"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape7"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="找人"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:background="@drawable/shape8"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_person_add_black_24dp"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="找群"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:background="@drawable/shape8"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_group_add_black_24dp"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_chevron_right_black_24dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

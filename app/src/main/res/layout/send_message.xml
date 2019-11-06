@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/messagehead">
+        <TextView
+            android:id="@+id/messagetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListView是一个 数据控件，可以展示从数据库
+        中读取的数据。是.net3.5的新控件。"
+            android:background="@drawable/shape2"/>
+        <ImageView
+            android:id="@+id/righttriangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/righttriangle"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-1dp"
+            />
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/messagehead"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/img004"
+        app:riv_oval="true"
+        app:riv_border_width="2dp"
+        app:riv_border_color="#740C5F"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
